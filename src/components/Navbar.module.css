@@ -1,0 +1,95 @@
+.navSec {
+  height: 70px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 2%;
+  background-color: #1a0305;
+  border-bottom: 2px solid rgba(180, 0, 0, 0.3);
+}
+
+.firstSec {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.firstSec span {
+  font-size: 40px;
+  color: #c0392b;
+}
+
+.thirdSec {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.searchSec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 70%;
+}
+
+.searchBar {
+  height: 60%;
+  width: 70%;
+  font-size: 20px;
+  padding-left: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.searchSec span {
+  font-size: 40px;
+  margin-left: 5px;
+  color: #c0392b;
+}
+
+.profile {
+  width: 20%;
+}
+
+.borderBox {
+  height: 80%;
+  width: 100%;
+  background-color: rgba(180, 0, 0, 0.12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  margin: 10px;
+  border: 1px solid rgba(180, 0, 0, 0.25);
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.homeLink {
+  font-size: 26px;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+  color: #c0392b;
+}
+
+.homeLink:hover {
+  color: #e74c3c;
+}
+
+.profile {
+  font-family: Bebas Neue;
+  color: #e74c3c;
+}

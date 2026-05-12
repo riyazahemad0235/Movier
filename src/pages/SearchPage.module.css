@@ -1,0 +1,63 @@
+/* Header section — left red border, stacked labels + huge query */
+.firstSec {
+  border-left: 5px solid #8b0000;
+  margin-left: 50px;
+  margin-top: 30px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.firstSec h4 {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.45);
+  font-family: sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.firstSec h1 {
+  font-size: 100px;
+  font-family: "Bebas Neue", cursive;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1;
+}
+
+/* Movie grid */
+.movieGrid {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 0 60px 80px;
+  flex-wrap: wrap;
+}
+
+.movieImg {
+  height: 300px;
+  width: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+}
+
+.movieSec {
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.2s linear;
+}
+
+.movieSec:hover {
+  transform: scale(1.08);
+}
+
+.movieSec h2 {
+  text-align: center;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 8px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

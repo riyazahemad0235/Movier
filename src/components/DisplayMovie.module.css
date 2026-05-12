@@ -1,0 +1,255 @@
+.loaderBox {
+  height: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  width: 80px;
+  aspect-ratio: 1;
+  color: #c0392b;
+  position: relative;
+  background: radial-gradient(20px, currentColor 94%, #0000);
+}
+
+.loader:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background:
+    radial-gradient(18px at bottom right, #0000 94%, currentColor) top left,
+    radial-gradient(18px at bottom left, #0000 94%, currentColor) top right,
+    radial-gradient(18px at top right, #0000 94%, currentColor) bottom left,
+    radial-gradient(18px at top left, #0000 94%, currentColor) bottom right;
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  animation: l18 1.5s infinite cubic-bezier(0.3, 1, 0, 1);
+}
+
+@keyframes l18 {
+  33% {
+    inset: -15px;
+    transform: rotate(0deg);
+  }
+  66% {
+    inset: -15px;
+    transform: rotate(90deg);
+  }
+  100% {
+    inset: 0;
+    transform: rotate(90deg);
+  }
+}
+
+.firstSec {
+  display: flex;
+}
+
+.moviePoster {
+  height: 300px;
+  width: 200px;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.genreSec {
+  display: flex;
+  gap: 20px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.genreSec h4 {
+  font-size: 16px;
+  border: 2px solid rgba(180, 0, 0, 0.5);
+  border-radius: 25px;
+  padding: 4px 14px;
+  color: #c0392b;
+  background-color: rgba(180, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 55px;
+  margin-left: 50px;
+  margin-top: 10px;
+  font-family: "Bebas Neue", cursive;
+  color: white;
+}
+
+.ratingSec {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.ratingSec h1 {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.mainContainer {
+  padding-left: 30px;
+  margin-top: 20px;
+}
+
+.secondSec {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.secondSec h1 {
+  font-size: 28px;
+  color: #c0392b;
+}
+
+.secondSec p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.7;
+  max-width: 900px;
+}
+
+.thirdSec {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin-top: 40px;
+  padding-right: 30px;
+}
+
+.thirdSec div {
+  height: 6rem;
+  width: 15rem;
+  padding: 10px 20px;
+  border: 2px solid rgba(180, 0, 0, 0.3);
+  border-radius: 25px;
+  text-align: left;
+  background-color: rgba(180, 0, 0, 0.08);
+}
+
+.headings {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.45);
+  margin-bottom: 5px;
+}
+
+.subheads {
+  font-size: 20px;
+  color: white;
+}
+
+.showingCast {
+  display: inline-block;
+  margin: 30px 20px 0;
+  text-align: center;
+}
+
+.showingCast img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 2px solid rgba(180, 0, 0, 0.4);
+  object-fit: cover;
+}
+
+.showingCast h1 {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#castHeading {
+  font-size: 36px;
+  margin-top: 40px;
+  margin-left: 10px;
+  color: #c0392b;
+}
+
+.subHeading {
+  margin-top: 40px;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.scrollContainer {
+  min-height: 300px;
+  height: 30rem;
+  overflow-y: auto;
+  border: 1px solid rgba(180, 0, 0, 0.2);
+  padding: 15px;
+  border-radius: 8px;
+  background: rgba(180, 0, 0, 0.05);
+  margin-top: 20px;
+}
+
+.castList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.remainCast {
+  padding: 12px 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  font-size: 16px;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  width: 6px;
+}
+.scrollContainer::-webkit-scrollbar-thumb {
+  background: #8b0000;
+  border-radius: 10px;
+}
+.scrollContainer::-webkit-scrollbar-track {
+  background: #1a0305;
+}
+
+.remainImg {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.lists {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lists h4 {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.lists h2 {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 4px;
+}
+
+.footar {
+  height: 100px;
+}
+
+.overview {
+  background-color: rgb(45, 0, 10); /* same dark maroon color */
+  border: 1px solid #8b0000;
+  border-radius: 20px;
+  padding: 20px 25px;
+  width: 62%;
+  margin: 20px 0 40px 0;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 18px;
+  line-height: 1.9;
+}
