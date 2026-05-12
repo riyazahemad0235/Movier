@@ -10,7 +10,7 @@ import DisplayMovie from "./components/DisplayMovie";
 function App() {
   return (
     <MovieProvider>
-      <BrowserRouter basename="/movier">
+      <BrowserRouter basename="/">
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
